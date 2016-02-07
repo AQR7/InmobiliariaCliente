@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700|Noto+Sans);
+body{background-image:url("../imagenes/fondo.jpg");background-position: center center;
+background-repeat: no-repeat;background-attachment: fixed;background-size: cover;font-family: 'Noto Sans', sans-serif !important; font-weight:bold;}
+#menuPrincipal{height:100%; display:block;border:1px solid;}
+#menuPrincipal>img{margin-bottom:10%;}
+#formularios{height:100%; display:block;box-sizing:border-box;}
+#formularios>div{display:none;margin-top:5%;}
+div{box-sizing:border-box;}
+label{font-size:13;}
+.error {background-color:yellow !important;}
+h1{font-family: 'Yanone Kaffeesatz', sans-serif!important; font-size:40px !important;}
+.mensajes {display:none;border:thin black solid;background-color:beige;width:610px; height:auto;top:100px;position:fixed;text-align:center;z-index: 2;}
+.lcapaTransparente{position:fixed;top:0px;left:0px;height:100%;width:100%;background-color:white;opacity:0.5;z-index: -1;}

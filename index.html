@@ -1,0 +1,764 @@
+﻿<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wnameth=device-wnameth, initial-scale=1">
+    <title>UPOINMOBILIARIA</title>
+ 	<link type="text/css" rel="stylesheet" href="css/estilos.css" />
+	<script type="text/javascript" src="js/objeto.js"></script>
+	<script type="text/javascript" src="js/codigo.js"></script>
+ 	
+    <!-- CSS de Bootstrap -->
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+    
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.css">
+	
+ 
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+
+		<div class="col-sm-4 text-left" id="menuPrincipal">
+
+			<img class="img-responsive center-block" wnameth="200" height="200" src="imagenes/logo.png"></img>
+
+			<div class="center-block">
+				<h1 class="text-center">MENU PRINCIPAL</h1>
+				
+				<form name="f_menu">
+					<ol class="opciones">
+						<li>Gestión de clientes</li>
+						<li>Gestión de inmuebles</li>
+						<li>Gestión de ventas</li>
+						<li>Gestión de alquiler</li>
+						<li>Gestión de empleados</li>
+						<li>Agenda de visitas</li>
+						<li>Gestión de sede</li>
+						<li>Listados</li>
+					</ol>
+				</form>
+				
+			</div>
+		</div>
+
+		<div class="col-sm-7 col-sm-offset-1" id="formularios">
+
+
+			<div name="listado">
+				<h1 class="text-center">Listado</h1>
+				<form name="formListar">
+					<ol class="opcionesListado">
+						<li>Listar clientes</li>
+						<li>Listar inmuebles</li>
+						<li>Listar ventas</li>
+						<li>Listar alquileres</li>
+						<li>Listar empleados</li>
+						<li>Listar visitas</li>
+						<li>Listar sedes</li>
+					</ol>
+				</form>
+			</div>
+
+
+
+
+			<div name="clientes">
+				<h1 class="text-center">Gestión de clientes</h1>
+				<form name="formCliente">
+					<ol class="opcionesCliente">
+						<li>Alta cliente</li>
+						<li>Baja cliente</li>
+						<li>Modificación del cliente</li>
+					</ol>
+				</form>
+			</div>
+
+
+			<div name="altaCliente">
+
+			<h1>Alta de clientes</h1>
+
+			<form name="altaClienteForm">
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">DNI</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control"name="dni"value=""></input>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Nombre</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control"name="nombre"value=""></input>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Apellidos</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control"name="apellidos"value=""></input>
+					</div>
+				</div>
+				 
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Teléfono</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control"name="telefono"value=""></input>
+					</div>
+				</div>
+					<br>
+				<div class="form-group">
+					<div class="col-lg-12">
+					<div class="span12">.</div>
+						<input type="button" name="btnAltaCliente" class="btn btn-primary" value="Alta de cliente"/>
+					</div>
+					
+				</div>
+			</form>
+			</div>
+
+
+			<div name="bajaCliente">
+
+			<h1>Baja de clientes</h1>
+
+			<form name="bajaClienteForm">
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Cliente a borrar</label>
+					<div class="col-lg-12">
+					<select class="form-control" name="dni"></select>
+					</div>
+					
+				</div>
+					<br>
+				<div class="form-group">
+					<div class="col-lg-12">	
+					<div class="span12">.</div>
+						<input type="button" name="btnBajaCliente"  class="btn btn-primary" value="Borrar cliente"/>
+					</div>
+					
+				</div>		
+
+				
+				</form>
+			</div>
+
+
+			<div name="modificarCliente">
+
+			<h1>Modificación del cliente</h1>
+
+			<form name="modificarClienteForm">
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Cliente a modificar</label>
+					<div class="col-lg-12">
+					<select class="form-control" name="dni"></select>
+					</div>
+				</div>
+					<br>
+				<div class="form-group">
+					<div class="col-lg-12">
+					<div class="span12">.</div>
+						<input type="button" name="btnModificarCliente" class="btn btn-primary" value="Modificar cliente"/>
+					</div>
+					
+				</div>
+				
+				</form>
+			</div>
+
+
+			<div name="modificarClienteDatos">
+
+			<h1>Modificación del cliente</h1>
+
+			<form name="modificarClienteForm2">
+				
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Nombre</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control" name="nombre" value=""></input>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Apellidos</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control" name="apellidos" value=""></input>
+					</div>
+				</div>
+				 
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Teléfono</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control" name="telefono" value=""></input>
+					</div>
+				</div>
+					<br>
+				<div class="form-group">
+					<div class="col-lg-12">
+					<div class="span12">.</div>
+						<input type="button" name="btnModificarClienteDatos" class="btn btn-primary" value="Guardar datos"/>
+					</div>
+					
+				</div>
+				
+				<input type="hidden" class="form-control" name="dni" value=""></input>
+				
+			</form>
+			</div>
+
+
+			<div name="inmuebles">
+
+			<h3>Gestión de inmuebles</h3>
+
+			<form name="inmueblesForm">
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Agente asociado</label>
+					<div class="col-lg-12">
+					<select class="form-control" name="agenteAsociado"></select>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Id Inmueble</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control" name="idInmueble" value=""></input>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Tipo</label>
+						<div class="col-sm-12 tipo">
+							<label class="col-sm-1 control-label">Piso</label>
+							<div class="col-lg-3">
+								<input type="radio" class="form-control" name="tipoInmueble" value="Piso" checked></input>
+							</div>
+							<label class="col-lg-1 control-label">Chalet</label>
+							<div class="col-lg-3">
+								<input type="radio" class="form-control" name="tipoInmueble" value="Chalet"></input>
+							</div>
+							<label class="col-lg-1 control-label">Casa</label>
+							<div class="col-lg-3">
+								<input type="radio" class="form-control" name="tipoInmueble" value="Casa"></input>
+							</div>
+
+						</div>
+				
+				</div>
+					
+
+				 
+				<div class="form-group">
+					<label class="col-lg-5 control-label">M2</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control" name="m2" value=""></input>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Dirección</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control" name="direccion" value=""></input>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Descripción</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control" name="descripcion" value=""></input>
+					</div>
+				</div>
+
+
+				<div class="form-group">
+					<div class="col-lg-12">
+					<div class="span12">.</div>
+						<input type="button" name="altaInmueble" class="btn btn-primary" value="Alta de inmueble"/>	
+					</div>
+				</div>
+				
+
+			</form>
+			</div>
+
+			<div name="ventas">
+
+				<form name="VentasForm">
+					<h1>Gestión de ventas</h1>
+					
+						<div class="form-group">
+							<label class="col-lg-5 control-label">Inmueble</label>
+							<div class="col-lg-12">
+								<select class="form-control" name="idInmuebleVenta"></select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-lg-5 control-label">Cliente</label>
+							<div class="col-lg-12">
+								<select class="form-control" name="dniClienteVenta"></select>
+							</div>
+						</div>
+
+						<label class="col-lg-5 control-label">Fecha en la que se realiza la venta</label>
+					
+						<div class="col-sm-12 fecha">
+							<div class="form-group">
+								<label class="col-lg-2 control-label">Dia</label>
+								<div class="col-lg-2">
+									<select id="dia" name="cboDiaCompraFechaInicio" class="form-control"> </select>
+								</div>
+							
+							
+							
+								<label class="col-lg-2 control-label">Mes:</label> 
+								<div class="col-lg-2">
+									<select id="mes" name="cboMesCompraFechaInicio" class="form-control" > </select> 
+								</div>
+							
+							
+								<label class="col-lg-1 control-label">Año:</label> 
+								<div class="col-lg-3">
+									<select id="ano" name="cboAnoCompraFechaInicio" class="form-control"> </select>
+								</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-lg-5 control-label">Precio de venta</label>
+							<div class="col-lg-12">
+							<input type="text" class="form-control" name="precioVenta" value=""></input>
+							</div>
+						</div>
+						
+					<div class="form-group">
+						<div class="col-lg-12">
+						<div class="span12">.</div>
+							<input type="button" name="altaVenta" class="btn btn-primary" value="Realizar venta"/>	
+						</div>
+					</div>
+
+
+				</form>
+			</div>
+
+
+			<div name="alquiler">
+				<form name="alquilerForm">
+				<h1>Gestión de alquiler</h1>
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Inmueble</label>
+					<div class="col-lg-12">
+						<select class="form-control" name="idInmuebleAlquiler"></select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Cliente</label>
+					<div class="col-lg-12">
+						<select class="form-control" name="dniClienteAlquiler"></select>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Fecha en la que se realiza el alquiler</label>
+					
+					<div class="col-xs-12 fecha">
+						<div class="form-group">
+							<label class="col-lg-2 control-label">Dia</label>
+							<div class="col-lg-2">
+								<select class="form-control" name="cboDiaAlquilerFechaInicio"> </select>
+							</div>
+							
+							
+							
+							<label class="col-lg-2 control-label">Mes:</label> 
+							<div class="col-lg-2">
+								<select class="form-control" name="cboMesAlquilerFechaInicio"> </select> 
+							</div>
+							
+							
+							<label class="col-lg-1 control-label">Año:</label> 
+							<div class="col-lg-3">
+								<select class="form-control" name="cboAnoAlquilerFechaInicio"> </select>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Duración del contrato de alquiler en meses</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control"name="duracion"value=""></input>
+					</div>
+				</div>
+
+				<div class="form-group" id="precioAlquiler">
+					<label class="col-lg-5 control-label">Precio de alquiler</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control" name="precioAlquiler" value=""></input>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<div class="col-lg-12">
+					<div class="span12">.</div>
+						<input type="button" name="btnAltaAlquiler" class="btn btn-primary" value="Realizar alquiler"/>
+					</div>
+				</div>
+				
+				</form>
+			</div>
+
+
+			<div name="altaEmpleado">
+
+			<h1>Alta de empleado</h1>
+
+				<form name="altaEmpleadoForm">
+					
+				<h3 class="col-lg-5 control-label">Tipo de empleado</h3>
+							<div class="col-lg-12 tipo">
+								<label class="col-lg-4 control-label">Agente inmobiliario</label>
+								<div class="col-lg-2">
+									<input type="radio" class="form-control" name="tipo" value="agenteInmobiliario" checked></input>
+								</div>
+								<label class="col-lg-4 control-label">Jefe de sede</label>
+								<div class="col-lg-2">
+									<input type="radio" class="form-control" name="tipo" value="jefeSed"></input>
+								</div>
+							
+							</div>
+				
+				<br>
+				<div class="form-group">
+					<div class="col-lg-12">
+					<div class="span12">.</div>
+					<input type="button" name="btnAltaEmpleado"  class="btn btn-primary" value="Siguiente"/>	
+
+					</div>
+				</div>
+				
+
+
+					
+					
+				</form>
+			</div>
+
+
+			<div name="altaEmpleadoAgente">
+
+				<h1>Agente inmobiliario</h1>
+				
+				<form name="altaEmpleadoAgenteForm">
+					
+				<div class="form-group">
+					<label class="col-lg-5 control-label">DNI</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control"name="dni"value=""></input>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Nombre</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control"name="nombre"value=""></input>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Apellidos</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control"name="apellidos"value=""></input>
+					</div>
+				</div>
+				 
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Teléfono</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control"name="telefono"value=""></input>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Inmueble asociados</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control"name="inmuebleAsociados"value=""></input>
+					</div>
+				</div>
+					<div class="form-group">
+					<label class="col-lg-5 control-label">Sede del agente</label>
+					<div class="col-lg-12">
+					<select class="form-control" name="sede"></select>
+					</div>
+				</div>	
+					
+						<br>
+					
+				<div class="form-group">
+					<div class="col-lg-12">
+					<div class="span12">.</div>
+						<input type="button" name="btnAltaEmpleadoAgente"  class="btn btn-primary" value="Alta de empleado"/>
+					</div>
+					
+				</div>		
+					
+					
+					
+
+					
+				
+				</form>
+
+			</div>
+
+			<div name="altaEmpleadoJefeSede">
+
+				<h1>Jefe de sede</h1>
+				
+				<form name="altaEmpleadoJefeSedeForm">
+					
+			<div class="form-group">
+					<label class="col-lg-5 control-label">DNI</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control"name="dni"value=""></input>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Nombre</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control"name="nombre"value=""></input>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Apellidos</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control"name="apellidos"value=""></input>
+					</div>
+				</div>
+				 
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Teléfono</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control"name="telefono"value=""></input>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Número de empleados</label>
+					<div class="col-lg-12">
+					<input type="text" class="form-control" name="numEmpleado"value=""></input>
+					</div>
+				</div>
+					
+					<br>
+					
+				<div class="form-group">
+					<div class="col-lg-12">
+					<div class="span12">.</div>
+						<input type="button" name="btnAltaEmpleadoJefeSede"  class="btn btn-primary" value="Alta de empleado"/>
+					</div>
+					
+				</div>		
+					
+				
+				</form>
+
+
+			</div>
+
+
+
+
+			<div name="visita" >
+				<form name="visitaForm">
+				<h1>Agenda de visita</h1>
+				
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">ID</label>
+					<div class="col-lg-12">
+						<input type="text" class="form-control" name="id" value=""></input>
+					</div>
+				</div>
+
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Inmueble</label>
+					<div class="col-lg-12">
+						<select class="form-control" name="inmueble"></select>
+					</div>
+				</div>
+				
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Agente</label>
+					<div class="col-lg-12">
+						<select class="form-control" name="agente"></select>
+					</div>
+				</div>
+				
+				
+				<div class="form-group">
+					<label class="col-lg-6 control-label">Fecha en la que se realiza la visita</label>
+					
+					
+					<div class="col-xs-12 fecha">
+						<div class="form-group">
+							<label class="col-lg-2 control-label">Dia</label>
+							<div class="col-lg-2">
+								<select id="form_birthday_day" class="form-control" name="cboDiaVisita"> </select>
+							</div>
+							
+							
+							
+							<label class="col-lg-2 control-label">Mes:</label> 
+							<div class="col-lg-2">
+								<select id="form_birthday_month"  class="form-control" name="cboMesVisita"> </select> 
+							</div>
+							
+							
+							<label class="col-lg-1 control-label">Año:</label> 
+							<div class="col-lg-3">
+								<select id="form_birthday_year"  class="form-control" name="cboAnoVisita"> </select>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="form-group">
+					<label class="col-lg-5 control-label">Hora en la que se realiza la visita</label>
+					
+					<div class="col-xs-12 hora">
+						<div class="form-group">
+							<label class="col-lg-2 control-label">Hora</label>
+							<div class="col-lg-2">
+								<select  class="form-control" name="cboHoraVisita"> </select>
+							</div>
+						
+						
+						
+							<label class="col-lg-2 control-label">Minuto</label> 
+							<div class="col-lg-2">
+								<select  class="form-control" name="cboMinutoVisita"> </select> 
+							</div>
+							
+						
+						</div>
+					</div>
+				</div>
+
+
+				<label class="col-lg-5 control-label">Estado</label>
+				<div class="col-lg-12 estado">
+					<label class="col-lg-2 control-label">Programada</label>
+					<div class="col-lg-2">
+						<input type="radio" class="form-control" name="estado" value="Programada" checked></input>
+					</div>
+					<label class="col-lg-2 control-label">Cancelada</label>
+					<div class="col-lg-2">
+						<input type="radio" class="form-control" name="estado" value="Cancelada"></input>
+					</div>
+					<label class="col-lg-2 control-label">Realizada</label>
+					<div class="col-lg-2">
+						<input type="radio" class="form-control" name="estado" value="Realizada"></input>
+					</div>
+
+				
+				</div>
+
+
+				<div class="form-group">
+					<div class="col-lg-12">
+
+						<div class="span12">.</div>
+						<input type="button" name="btnAltaVisita"  class="btn btn-primary" value="Alta de visita"/>
+
+					</div>
+				</div>
+
+				</form>
+			</div>
+
+
+
+			<div name="divSede">
+
+				<h1>Gestión de sede</h1>
+
+				<form name="sedeForm">
+
+					<div class="form-group">
+						<label class="col-lg-5 control-label">ID</label>
+						<div class="col-lg-12">
+						<input type="text" class="form-control" name="id" value=""></input>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label class="col-lg-5 control-label">Jefe de sede</label>
+						<div class="col-lg-12">
+							<select class="form-control" name="jefeSede"></select>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-lg-5 control-label">Número de empleados</label>
+						<div class="col-lg-12">
+						<input type="text" class="form-control"name="numEmpleado"value=""></input>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-lg-5 control-label">Nombre</label>
+						<div class="col-lg-12">
+						<input type="text" class="form-control"name="nombreSede"value=""></input>
+						</div>
+					</div>
+						<br>
+					<div class="form-group">
+						<div class="col-lg-12">
+							<div class="span12">.</div>
+							<input type="button" name="btnAltaSede"  class="btn btn-primary" value="Alta de sede"/>
+						</div>
+					</div>
+				
+				</form>
+				
+				
+
+			</div>
+
+
+			<div class="capaTransparente" name="capaTransparente">
+
+
+			</div>
+
+			<div class="mensajes" name="mensajes">
+					<h2 class="textoMensaje" name="textoMensaje"> </h2>
+					<input type="button" name="btnCerrarMensaje" value="Aceptar"/>
+			</div>
+
+			</div>
+		</div>
+	</div>
+
+	
+	<script src="jquery/jquery-1.11.0.min.js"></script>
+	
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	
+</body>
+
+</html>
