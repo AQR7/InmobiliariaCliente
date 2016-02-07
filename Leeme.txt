@@ -1,0 +1,22 @@
+Trabajo realizado por Alberto Quevedo Rodríguez y Francisco Jose Rodríguez De la Peña.
+
+Link GitHub
+https://github.com/AQR7/InmobiliariaCliente
+
+
+Link Hostinger
+http://www.spitinglish.esy.es/InmobiliariaCliente/
+
+Se contempla que el usuario alquile 2 veces 1 inmueble, ya que el contrato de alquiler puede romperse en cualquier momento y este inmueble alquilarse a otro cliente.
+1 inmueble solo puede venderse 1 vez.
+
+
+Un agente Inmobiliario puede tener 0 inmuebles asociados
+
+Una sede puede tener 0 empleados
+
+
+Datos de prueba incluidos en datos.xml
+
+
+

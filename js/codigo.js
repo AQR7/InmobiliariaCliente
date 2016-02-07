@@ -1292,7 +1292,7 @@ function validarInmueble()
 	
 	var oExpReg = /^(?:\+|-)?\d+$/;
 	
-	if (oExpReg.test(idInmueble) == false)
+	if (oExpReg.test(idInmueble) == false || idInmueble==0)
 	{
 	
 		if(bValido == true)
@@ -1357,9 +1357,9 @@ function validarInmueble()
 	
 	var m2=formularioAltaInmueble.m2.value;
 
-	var oExpReg = /^(?:\+|-)?\d+$/;
+	var oExpReg = /^\d+$/;
 	
-	if (oExpReg.test(m2) == false)
+	if (oExpReg.test(m2) == false || m2==0)
 	{
 	
 		if(bValido == true)
@@ -1697,7 +1697,7 @@ function validarAltaEmpleadoAgente()
 	{
 	
 	
-		altaEmpleadoAgente.inmuebleAsociados.className = "form-control";	
+		altaEmpleadoAgente.sede.className = "form-control";	
 	}
 
 
@@ -1860,7 +1860,7 @@ function validarAltaEmpleadoJefeSede()
 	
 	var oExpReg = /^(?:\+|-)?\d+$/;
 	
-	if (oExpReg.test(numEmpleado) == false)
+	if (oExpReg.test(numEmpleado) == false || numEmpleado==0)
 	{
 	
 		if(bValido == true)
@@ -2277,6 +2277,8 @@ function altaVenta()
 		}
 		else
 		{
+			VentasForm.idInmuebleVenta.focus();	
+			VentasForm.idInmuebleVenta.className = "form-control error";
 			mensaje("Venta existente"); //mensaje
 		}
 	}
@@ -2480,7 +2482,7 @@ function validarDatosAltaVenta()
 		
 	var oExpReg =  /^[0-9]+$/;
 	
-	if (oExpReg.test(precioVenta) == false)
+	if (oExpReg.test(precioVenta) == false || precioVenta==0)
 	{
 	
 		if(bValido == true)
@@ -2772,7 +2774,7 @@ function validarDatosAltaAlquiler()
 		
 	var oExpReg =  /^[0-9]+$/;
 	
-	if (oExpReg.test(duracion) == false)
+	if (oExpReg.test(duracion) == false || duracion==0)
 	{
 	
 		if(bValido == true)
@@ -2801,7 +2803,7 @@ function validarDatosAltaAlquiler()
 		
 	var oExpReg =  /^[0-9]+$/;
 	
-	if (oExpReg.test(precioAlquiler) == false)
+	if (oExpReg.test(precioAlquiler) == false || precioAlquiler==0)
 	{
 	
 		if(bValido == true)
